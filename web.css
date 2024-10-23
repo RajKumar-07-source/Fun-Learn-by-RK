@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #d1a7a7;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #161625;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.hero {
+    background: linear-gradient(to right, #492e31, #6f8089);
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.primary {
+    background-color: #0b0e11;
+    color: white;
+}
+
+.secondary {
+    background-color: rgb(207, 188, 188);
+    color: #050608;
+}
+
+.featured-games, .categories, .progress-stats {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.game-grid, .category-grid, .stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+/******  25ee63b3-3968-4258-879e-f76d271c4ae1  *******/
+}
+
+.game-card, .category-item, .stat-item {
+    background-color: rgb(220, 197, 197);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.play-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #492e31;
+    color: rgb(252, 252, 252);
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+.GamesToPlay {
+    display: flex;
+    justify-content: center;
+
+}
+
+.trackyourprogress {
+    display: flex;
+    justify-content: center;
+}
+
+.Aboutus {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-aroundce;
+}
+
+.Aboutus .content{
+    width: 100%;
+}
+
+.Aboutus .content h1{
+    font-size: 4.5rem;
+    margin: 7rem 2rem 0 5rem;
+    color: #492e31;
+}
+
+.Aboutus .content p{
+    font-size: 1.2rem;
+    margin: 1rem 2rem 0 5rem;
+}
+
+.Aboutus .content p span {
+    color: #492e31;
+}
+
+.Aboutus .content p a {
+    text-decoration: underline;
+    text-decoration-color: #492e31;
+}
+
+.letsplay {
+    padding-left: 80px;
+}
+
+footer {
+    background-color: #292020;
+    color: rgb(81, 12, 12);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-links a, .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #492e31;
+    font-size: 22px;
+    color: white;
+}
