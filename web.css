@@ -1,210 +1,238 @@
+/* General reset for clean styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
+/* Body styling */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #d1a7a7;
+    background-color: #f0f8ff;
     color: #333;
 }
 
+/* Header styling */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #161625;
-    color: white;
+    background-color: #FF8C42;
 }
 
-.logo {
-    font-size: 24px;
+header .logo {
+    font-size: 2em;
+    color: #FFFFFF;
     font-weight: 600;
 }
 
-nav ul {
+header nav ul {
+    list-style-type: none;
     display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.search-bar input {
-    padding: 5px 10px;
-    border-radius: 20px;
-    border: none;
-}
-
-.hero {
-    background: linear-gradient(to right, #492e31, #6f8089);
-    text-align: center;
-    padding: 100px 20px;
-    color: white;
-}
-
-.hero h1 {
-    font-size: 48px;
-}
-
-.hero p {
-    font-size: 20px;
-    margin: 20px 0;
-}
-
-.cta-buttons {
-    margin-top: 20px;
-}
-
-.btn {
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 30px;
-    font-size: 18px;
-    margin: 0 10px;
-}
-
-.primary {
-    background-color: #0b0e11;
-    color: white;
-}
-
-.secondary {
-    background-color: rgb(207, 188, 188);
-    color: #050608;
-}
-
-.featured-games, .categories, .progress-stats {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-h2 {
-    margin-bottom: 30px;
-    font-size: 32px;
-}
-
-.game-grid, .category-grid, .stats-grid {
-    display: flex;
-    justify-content: center;
     gap: 20px;
 }
 
-@keyframes moveLeft {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(100%);
-    }
-/******  25ee63b3-3968-4258-879e-f76d271c4ae1  *******/
+header nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-.game-card, .category-item, .stat-item {
-    background-color: rgb(220, 197, 197);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 200px;
+header nav ul li a:hover {
+    color: #FFD700;
+}
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Hero section */
+.hero {
+    background-image: linear-gradient(to right, #FFB6C1, #FF69B4);
+    color: #FFF;
+    padding: 50px;
     text-align: center;
 }
 
-.game-card img {
-    width: 100%;
+.featured-games {
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-buttons .btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn.primary {
+    background-color: #FF4500;
+}
+
+.btn.secondary {
+    background-color: #FF6347;
+}
+
+.btn:hover {
+    background-color: #FFD700;
+}
+
+/* Game grid */
+.game-grid, .category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.game-card, .category-item {
+    background-color: #FFFFFF;
+    padding: 15px;
     border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.game-card:hover, .category-item:hover {
+    transform: scale(1.05);
+}
+
+.game-card img, .category-item img {
+    border-radius: 5px;
+    width: 100%;
 }
 
 .play-btn {
     display: inline-block;
     margin-top: 10px;
-    padding: 8px 16px;
-    background-color: #492e31;
-    color: rgb(252, 252, 252);
-    border-radius: 20px;
+    padding: 8px 15px;
+    background-color: #32CD32;
+    color: #FFF;
+    border-radius: 5px;
     text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-
-.GamesToPlay {
-    display: flex;
-    justify-content: center;
-
+.play-btn:hover {
+    background-color: #228B22;
 }
 
-.trackyourprogress {
-    display: flex;
-    justify-content: center;
-}
-
-.Aboutus {
-    width: 90%;
-    height: 80%;
-    display: flex;
-    justify-content: space-aroundce;
-}
-
-.Aboutus .content{
-    width: 100%;
-}
-
-.Aboutus .content h1{
-    font-size: 4.5rem;
-    margin: 7rem 2rem 0 5rem;
-    color: #492e31;
-}
-
-.Aboutus .content p{
-    font-size: 1.2rem;
-    margin: 1rem 2rem 0 5rem;
-}
-
-.Aboutus .content p span {
-    color: #492e31;
-}
-
-.Aboutus .content p a {
-    text-decoration: underline;
-    text-decoration-color: #492e31;
-}
-
-.letsplay {
-    padding-left: 80px;
-}
-
-footer {
-    background-color: #292020;
-    color: rgb(81, 12, 12);
-    padding: 30px 20px;
+/* Progress Section */
+.progress {
+    background-color: #F0E68C;
+    padding: 20px;
     text-align: center;
 }
 
+.progress h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    background-color: #FFF;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/* About Us */
+#about {
+    padding: 30px;
+    background-color: #E6E6FA;
+    color: #333;
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 2.5em;
+    color: #4B0082;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Let's Play Button */
+.letsplay button {
+    background-color: #FF69B4;
+    color: #FFF;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.letsplay button:hover {
+    background-color: #FF1493;
+}
+
+/* Footer */
+footer {
+    background-color: #FF8C42;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .footer-links a, .social-icons a {
-    color: white;
+    color: #FFF;
     text-decoration: none;
+    font-size: 1em;
     margin: 0 10px;
 }
 
+.footer-links a:hover, .social-icons a:hover {
+    color: #FFD700;
+}
+
 .newsletter input {
-    padding: 10px;
-    border-radius: 20px;
+    padding: 8px;
+    border-radius: 5px;
     border: none;
     margin-right: 10px;
 }
 
-button {
-    padding: 10px 20px;
-    border-radius: 20px;
+.newsletter button {
+    padding: 8px 15px;
+    background-color: #FF6347;
+    color: #FFF;
     border: none;
-    background-color: #492e31;
-    font-size: 22px;
-    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #FF4500;
 }
