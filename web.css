@@ -6,12 +6,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 /* Body styling */
 body {
     background-color: #f0f8ff;
     color: #333;
 }
+.featured-games {
+    padding-top: 1em;
+    font-size: 24px;
+    text-align: center;
 
+}
 /* Header styling */
 header {
     display: flex;
@@ -59,15 +65,10 @@ header nav ul li a:hover {
     text-align: center;
 }
 
-.featured-games {
-    align-items: center;
-}
-
 .hero h1 {
     font-size: 3em;
     margin-bottom: 20px;
 }
-
 
 .hero p {
     font-size: 1.2em;
@@ -120,7 +121,7 @@ header nav ul li a:hover {
 }
 
 .game-card img, .category-item img {
-    border-radius: 5px;
+    border-radius: 8px;
     width: 100%;
 }
 
@@ -130,7 +131,7 @@ header nav ul li a:hover {
     padding: 8px 15px;
     background-color: #32CD32;
     color: #FFF;
-    border-radius: 5px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s;
@@ -146,10 +147,14 @@ header nav ul li a:hover {
     padding: 20px;
     text-align: center;
 }
+gamestoplay {
+    text-align: center;
+}
 
 .progress h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    
 }
 
 .stat-item {
@@ -169,13 +174,13 @@ header nav ul li a:hover {
 }
 
 #about h1 {
-    font-size: 2.5em;
+    font-size: 2.9em;
     color: #4B0082;
     margin-bottom: 20px;
 }
 
 #about p {
-    font-size: 1.1em;
+    font-size: 1.3em;
     line-height: 1.6;
 }
 
