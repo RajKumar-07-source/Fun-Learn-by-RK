@@ -90,7 +90,7 @@ header nav ul li a:hover {
 }
 
 .btn.secondary {
-    background-color: #FF6347;
+    background-color: #FF4500;
 }
 
 .btn:hover {
@@ -186,6 +186,9 @@ gamestoplay {
 
 /* Let's Play Button */
 .letsplay button {
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
     background-color: #FF69B4;
     color: #FFF;
     padding: 12px 25px;
